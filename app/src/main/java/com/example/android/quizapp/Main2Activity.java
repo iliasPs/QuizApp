@@ -1,5 +1,6 @@
 package com.example.android.quizapp;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -60,6 +61,7 @@ public class Main2Activity extends AppCompatActivity {
     ImageView q6Img;
     ImageView q7Img;
     ImageView q8Img;
+    Button q8But;
     int listenCheck=0;
 
 //    int listenCheck2=0;
@@ -77,8 +79,15 @@ public class Main2Activity extends AppCompatActivity {
         final Button button = findViewById(R.id.sub);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                final int plScore = score;
+                Intent sendScore = new Intent(Main2Activity.this, Main3Activity.class);
+                sendScore.putExtra("score", plScore);
+                startActivity(sendScore);
+
 
             }});
+
+
 
 
 
@@ -125,36 +134,51 @@ public class Main2Activity extends AppCompatActivity {
         q6Img = findViewById(R.id.imgQ6);
         q7Img = findViewById(R.id.imgQ7);
         q8Img = findViewById(R.id.imgQ8);
+        q8But =findViewById(R.id.subQ8);
         q7R1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (q7R1.isChecked()){listenCheck+=1;}
+            public void onCheckedChanged(CompoundButton compoundButton1, boolean b) {
+                if (q7R1.isChecked()){
+                    listenCheck+=1;
+                    q7Check2();
+                    q7R1.setEnabled(false);
+                    Log.v("Main2Activity","listenchk" + listenCheck);
+                    }
+
             }
         });
         q7R2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+            public void onCheckedChanged(CompoundButton compoundButton2, boolean b) {
 
-                if (q7R2.isChecked()){listenCheck+=1;}
+                if (q7R2.isChecked()){listenCheck+=1;
+                    q7Check2();
+                    q7R2.setEnabled(false);
+                    Log.v("Main2Activity","listenchk" + listenCheck);
+                    }
             }
         });
         q7R3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (q7R3.isChecked()){listenCheck-=2;}
+            public void onCheckedChanged(CompoundButton compoundButton3, boolean b) {
+                if (q7R3.isChecked()){listenCheck-=2;
+                    q7Check2();
+                    q7R3.setEnabled(false);
+                    Log.v("Main2Activity","listenchk" + listenCheck);}
             }
         });
         q7R4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (q7R4.isChecked()){listenCheck-=2;}
+            public void onCheckedChanged(CompoundButton compoundButton4, boolean b) {
+                if (q7R4.isChecked()){listenCheck-=2;
+                    q7Check2();
+                    q7R4.setEnabled(false);
+                    Log.v("Main2Activity","listenchk" + listenCheck);}
             }
         });
         correctState = (ContextCompat.getColorStateList(getApplicationContext(),R.color.radionbuttonstate));
         wrongState =  (ContextCompat.getColorStateList(getApplicationContext(),R.color.radiobuttonwrong));
         checkAnswers();
-
-
     }
 
     public void q1Check (){
@@ -367,7 +391,8 @@ public class Main2Activity extends AppCompatActivity {
                else if (listenCheck<0){
                 q7R3.setTextColor(wrongState);
                 q7R4.setTextColor(wrongState);
-                Toast.makeText(getApplicationContext(), getResources().getString(R.string.correct7), Toast.LENGTH_SHORT).show();}
+                Toast.makeText(getApplicationContext(), getResources().getString(R.string.correct7), Toast.LENGTH_SHORT).show();
+                }
 
             Log.v("Main2Activity","listenchk" + listenCheck);
                 }
@@ -480,15 +505,18 @@ public class Main2Activity extends AppCompatActivity {
 
 
         public void q8Check(){
-            if ((q8R1.getText().toString().toLowerCase().equals("reyes") | (q8R1.getText().toString().toLowerCase().equals("felipe reyes")))){
-                score = score + (100/8);
-                Toast.makeText(getApplicationContext(), getResources().getString(R.string.correct8), Toast.LENGTH_SHORT).show();
-            }
-            else {
-                Toast.makeText(getApplicationContext(), getResources().getString(R.string.correct8_1), Toast.LENGTH_SHORT).show();
-                }
+            q8But.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if ((q8R1.getText().toString().toLowerCase().equals("reyes") | (q8R1.getText().toString().toLowerCase().equals("felipe reyes")))) {
+                        score = score + (100 / 8);
+                        Toast.makeText(getApplicationContext(), getResources().getString(R.string.correct8), Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(getApplicationContext(), getResources().getString(R.string.correct8_1), Toast.LENGTH_SHORT).show();
+                    }
+                }});}
 
-        }
+
 
     public void checkAnswers(){
         q1Check();
@@ -501,10 +529,6 @@ public class Main2Activity extends AppCompatActivity {
         q8Check();
 
 
-//        final int plScore = score;
-//        Intent sendScore = new Intent(this, Main3Activity.class);
-//        sendScore.putExtra("score", plScore);
-//        startActivity(sendScore);
 
     }
 
