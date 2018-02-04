@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="q1Text">Which Euroleague team won its sixth championship May 4, 2008?</string>
+    <string name="q2Text">Which team won the first Euroleague title?</string>
+    <string name="q3Text">Which city was the host of the 2009 Euroleague Final Four?</string>
+    <string name="q4Text">Which team has won the most Euroleague titles?</string>
+    <string name="q5Text">Which player was the 2001 Euroleague Finals MVP?</string>
+    <string name="q6Text">Which team won the first ever Euroleague game in 1958?</string>
+    <string name="q7Text">Check below the top, all time, 2 players in the statistic category of Assists</string>
+    <string name="q8Text">Name the top Euroleague Rebounder of all times</string>
+    <string name="header1">Question 1:</string>
+    <string name="header2">Question 2:</string>
+    <string name="header3">Question 3:</string>
+    <string name="header4">Question 4:</string>
+    <string name="header5">Question 5:</string>
+    <string name="header6">Question 6:</string>
+    <string name="header7">Question 7:</string>
+    <string name="header8">Question 8:</string>
+    <string name="pao">Panathinaikos</string>
+    <string name="osfp">Olympiacos</string>
+    <string name="real">Read Madrid</string>
+    <string name="maccabiEL">Maccabi Elite</string>
+    <string name="maccabiTel">Maccabi Tel Aviv</string>
+    <string name="anderlechtois">Royal IV SC Anderlechtois</string>
+    <string name="etzella">BBC Etzella</string>
+    <string name="cska">CSKA Moscow</string>
+    <string name="riga">ASK Riga</string>
+    <string name="varese">Ignis Varese</string>
+    <string name="ath">Athens</string>
+    <string name="madrid">Madrid</string>
+    <string name="berlin">Berlin</string>
+    <string name="milan">Milan</string>
+    <string name="galis">Nikos Galis</string>
+    <string name="manu">Manu Ginobili</string>
+    <string name="toni">Toni Kukoc</string>
+    <string name="walter">Walter Magnifico</string>
+    <string name="dd">Dimitris Diamantidis</string>
+    <string name="vspan">Vasilis Spanoulis</string>
+    <string name="llul">Sergio Llul</string>
+    <string name="navarro">Juan Carlos Navarro</string>
+    <string name="hint1">Teams: Asefa Estudiantes, Real Madrid</string>
+    <string name="correct1">The correct Answer is CSKA Moscow</string>
+    <string name="correct2">The correct Answer is ASK Riga</string>
+    <string name="correct3">The correct Answer is Berlin</string>
+    <string name="correct4">The correct Answer is Real Madrid</string>
+    <string name="correct5">The correct Answer is Manu Ginobili</string>
+    <string name="correct6">The correct Answer is Royal IV SC Anderlechtois</string>
+    <string name="correct7">The correct Answer is Dimitris Diamantidis and Vasilis Spanoulis</string>
+    <string name="correct8">Correct! Its Felipe Reyes!</string>
+    <string name="correct8_1">The correct Answer is Felipe Reyes</string>
+    <string name="intro1">Welcome to the Euroleague Quiz \n Please enter your name below</string>
+
+
+</resources>

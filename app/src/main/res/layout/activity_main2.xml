@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="com.example.android.quizapp.Main2Activity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:layout_margin="8dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/header1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header1"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/q1Text"
+                style="@android:style/TextAppearance.Holo"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:text="@string/q1Text"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header1" />
+
+            <RadioGroup
+                android:id="@+id/q1Group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgQ1">
+
+                <RadioButton
+                    android:id="@+id/q1RadioAnswer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pao" />
+
+                <RadioButton
+                    android:id="@+id/q1RadioAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/real" />
+
+                <RadioButton
+                    android:id="@+id/q1RadioAnswer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cska" />
+
+                <RadioButton
+                    android:id="@+id/q1RadioAnswer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maccabiEL" />
+
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imgQ1"
+                android:layout_width="wrap_content"
+                android:layout_height="126dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/eurologo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.291" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:layout_margin="8dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/header2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header2"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/q2Text"
+                style="@android:style/TextAppearance.Holo"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:text="@string/q2Text"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header2" />
+
+            <RadioGroup
+                android:id="@+id/q2Group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgQ2">
+
+                <RadioButton
+                    android:id="@+id/q2RadioAnswer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cska" />
+
+                <RadioButton
+                    android:id="@+id/q2RadioAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/riga" />
+
+                <RadioButton
+                    android:id="@+id/q2RadioAnswer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/real" />
+
+                <RadioButton
+                    android:id="@+id/q2RadioAnswer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/varese" />
+
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imgQ2"
+                android:layout_width="wrap_content"
+                android:layout_height="126dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/eurologo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.291" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:layout_margin="8dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/header3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header3"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/q3Text"
+                style="@android:style/TextAppearance.Holo"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:text="@string/q3Text"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header3" />
+
+            <RadioGroup
+                android:id="@+id/q3Group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgQ3">
+
+                <RadioButton
+                    android:id="@+id/q3RadioAnswer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ath" />
+
+                <RadioButton
+                    android:id="@+id/q3RadioAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/berlin" />
+
+                <RadioButton
+                    android:id="@+id/q3RadioAnswer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/milan" />
+
+                <RadioButton
+                    android:id="@+id/q3RadioAnswer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/madrid" />
+
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imgQ3"
+                android:layout_width="wrap_content"
+                android:layout_height="126dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/eurologo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.291" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:layout_margin="8dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/header4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header4"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/q4Text"
+                style="@android:style/TextAppearance.Holo"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:text="@string/q4Text"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header4" />
+
+            <RadioGroup
+                android:id="@+id/q4Group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgQ4">
+
+                <RadioButton
+                    android:id="@+id/q4RadioAnswer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/real" />
+
+                <RadioButton
+                    android:id="@+id/q4RadioAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/osfp" />
+
+                <RadioButton
+                    android:id="@+id/q4RadioAnswer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/riga" />
+
+                <RadioButton
+                    android:id="@+id/q4RadioAnswer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/varese" />
+
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imgQ4"
+                android:layout_width="wrap_content"
+                android:layout_height="126dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/eurologo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.291" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:layout_margin="8dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/header5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header5"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/q5Text"
+                style="@android:style/TextAppearance.Holo"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:text="@string/q5Text"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header5" />
+
+            <RadioGroup
+                android:id="@+id/q5Group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgQ5">
+
+                <RadioButton
+                    android:id="@+id/q5RadioAnswer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/galis" />
+
+                <RadioButton
+                    android:id="@+id/q5RadioAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manu" />
+
+                <RadioButton
+                    android:id="@+id/q5RadioAnswer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/toni" />
+
+                <RadioButton
+                    android:id="@+id/q5RadioAnswer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/walter" />
+
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imgQ5"
+                android:layout_width="wrap_content"
+                android:layout_height="126dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/eurologo"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.291" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:layout_margin="8dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/header6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header6"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/q6Text"
+                style="@android:style/TextAppearance.Holo"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:text="@string/q6Text"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header6" />
+
+            <RadioGroup
+                android:id="@+id/q6Group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgQ6">
+
+                <RadioButton
+                    android:id="@+id/q6RadioAnswer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maccabiTel" />
+
+                <RadioButton
+                    android:id="@+id/q6RadioAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anderlechtois" />
+
+                <RadioButton
+                    android:id="@+id/q6RadioAnswer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/riga" />
+
+                <RadioButton
+                    android:id="@+id/q6RadioAnswer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/etzella" />
+
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imgQ6"
+                android:layout_width="wrap_content"
+                android:layout_height="126dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/eurologo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.291" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="351dp"
+            android:layout_margin="8dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/header7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header7"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/q7Text"
+                style="@android:style/TextAppearance.Holo"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:text="@string/q7Text"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header7" />
+
+            <TableLayout
+                android:id="@+id/table1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="76dp"
+                android:stretchColumns="*"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgQ7">
+
+                <TableRow android:layout_marginBottom="8dp">
+
+                    <CheckBox
+                        android:id="@+id/q7checkBox1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dd" />
+
+                    <CheckBox
+                        android:id="@+id/q7checkBox2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vspan" />
+                </TableRow>
+
+                <TableRow>
+
+                    <CheckBox
+                        android:id="@+id/q7checkBox3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/llul" />
+
+                    <CheckBox
+                        android:id="@+id/q7checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/navarro" />
+                </TableRow>
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imgQ7"
+                android:layout_width="wrap_content"
+                android:layout_height="126dp"
+                android:layout_marginBottom="148dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/eurologo"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/q7Text" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="236dp"
+            android:layout_margin="8dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/header8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/header8"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/q8Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/q8Text"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header8" />
+
+            <ImageView
+                android:id="@+id/imgQ8"
+                android:layout_width="wrap_content"
+                android:layout_height="126dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/felipe"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/q8Text" />
+
+
+
+                <EditText
+                    android:id="@+id/q8edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="@string/hint1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+
+            />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
