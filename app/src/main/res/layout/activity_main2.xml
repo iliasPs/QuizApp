@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:background="@android:color/darker_gray"
     tools:context="com.example.android.quizapp.Main2Activity">
 
@@ -12,9 +13,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
+        android:gravity="center"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -190,7 +189,7 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/dim8"
             android:background="@color/white">
 
             <TextView
@@ -198,8 +197,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/header3"
-                android:layout_margin="@dimen/dim8"
                 android:textSize="16sp"
+                android:layout_margin="@dimen/dim8"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -208,9 +207,9 @@
                 style="@android:style/TextAppearance.Holo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dim8"
                 android:text="@string/q3Text"
                 android:textSize="16sp"
+                android:layout_margin="@dimen/dim8"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -255,21 +254,22 @@
             <ImageView
                 android:id="@+id/imgQ3"
                 android:layout_width="wrap_content"
-                android:layout_height="81dp"
+                android:layout_height="126dp"
                 android:layout_margin="@dimen/dim8"
                 android:scaleType="fitCenter"
+                app:srcCompat="@drawable/eurologo"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/q3Text"
-                app:srcCompat="@drawable/eurologo" />
+                app:layout_constraintVertical_bias="0.291" />
 
 
         </android.support.constraint.ConstraintLayout>
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="351dp"
-            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim8"
             android:background="@color/white">
 
             <TextView
@@ -277,6 +277,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/header4"
+                android:layout_margin="@dimen/dim8"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -285,9 +286,10 @@
                 android:id="@+id/q4Text"
                 style="@android:style/TextAppearance.Holo"
                 android:layout_width="wrap_content"
-                android:layout_height="39dp"
+                android:layout_height="wrap_content"
                 android:text="@string/q4Text"
                 android:textSize="16sp"
+                android:layout_margin="@dimen/dim8"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -298,8 +300,7 @@
                 android:id="@+id/q4Group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="24dp"
+                android:layout_margin="@dimen/dim8"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imgQ4">
 
@@ -350,8 +351,8 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="351dp"
-            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim8"
             android:background="@color/white">
 
             <TextView
@@ -360,6 +361,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/header5"
                 android:textSize="16sp"
+                android:layout_margin="@dimen/dim8"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -367,7 +369,8 @@
                 android:id="@+id/q5Text"
                 style="@android:style/TextAppearance.Holo"
                 android:layout_width="wrap_content"
-                android:layout_height="39dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim8"
                 android:text="@string/q5Text"
                 android:textSize="16sp"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -380,8 +383,7 @@
                 android:id="@+id/q5Group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="24dp"
+                android:layout_margin="@dimen/dim8"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imgQ5">
 
@@ -430,8 +432,8 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="351dp"
-            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim8"
             android:background="@color/white">
 
             <TextView
@@ -439,6 +441,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/header6"
+                android:layout_margin="@dimen/dim8"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -447,7 +450,8 @@
                 android:id="@+id/q6Text"
                 style="@android:style/TextAppearance.Holo"
                 android:layout_width="wrap_content"
-                android:layout_height="39dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim8"
                 android:text="@string/q6Text"
                 android:textSize="16sp"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -460,8 +464,7 @@
                 android:id="@+id/q6Group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="24dp"
+                android:layout_margin="@dimen/dim8"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imgQ6">
 
@@ -511,8 +514,8 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="351dp"
-            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim8"
             android:background="@color/white">
 
             <TextView
@@ -520,15 +523,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/header7"
+                android:layout_margin="@dimen/dim8"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/q7Text"
-                style="@android:style/TextAppearance.Holo"
                 android:layout_width="wrap_content"
-                android:layout_height="39dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim8"
                 android:text="@string/q7Text"
                 android:textSize="16sp"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -541,7 +545,7 @@
                 android:id="@+id/table1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="76dp"
+                android:layout_margin="@dimen/dim8"
                 android:stretchColumns="*"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -606,6 +610,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/header8"
+                android:layout_margin="@dimen/dim8"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -614,9 +619,7 @@
                 android:id="@+id/q8Text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="50dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="8dp"
+                android:layout_margin="@dimen/dim8"
                 android:text="@string/q8Text"
                 android:textColor="@android:color/black"
                 android:textSize="14sp"
@@ -642,7 +645,6 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="40dp"
-                android:ems="10"
                 android:hint="@string/hint1"
                 app:layout_constraintTop_toBottomOf="@+id/imgQ8"
                 app:layout_constraintHorizontal_bias="0.504"
@@ -653,8 +655,8 @@
                 android:id="@+id/subQ8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:text="Button"
+                android:layout_margin="@dimen/dim8"
+                android:text="@string/sub8"
                 app:layout_constraintHorizontal_bias="0.465"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -665,11 +667,10 @@
 
         <Button
             android:id="@+id/sub"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="submit"
-            />
+            android:layout_gravity="center"
+            android:text="@string/result" />
 
 
     </LinearLayout>

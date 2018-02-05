@@ -39,16 +39,23 @@
     <string name="llul">Sergio Llul</string>
     <string name="navarro">Juan Carlos Navarro</string>
     <string name="hint1">Teams: Asefa Estudiantes, Real Madrid</string>
-    <string name="correct1">The correct Answer is CSKA Moscow</string>
-    <string name="correct2">The correct Answer is ASK Riga</string>
-    <string name="correct3">The correct Answer is Berlin</string>
-    <string name="correct4">The correct Answer is Real Madrid</string>
-    <string name="correct5">The correct Answer is Manu Ginobili</string>
-    <string name="correct6">The correct Answer is Royal IV SC Anderlechtois</string>
-    <string name="correct7">The correct Answer is Dimitris Diamantidis and Vasilis Spanoulis</string>
+    <string name="correct1">Wrong...The correct Answer is CSKA Moscow</string>
+    <string name="correct2">Wrong...The correct Answer is ASK Riga</string>
+    <string name="correct3">Wrong...The correct Answer is Berlin</string>
+    <string name="correct4">Wrong...The correct Answer is Real Madrid</string>
+    <string name="correct5">Wrong...The correct Answer is Manu Ginobili</string>
+    <string name="correct6">Wrong...The correct Answer is Royal IV SC Anderlechtois</string>
+    <string name="correct7">Wrong...The correct Answer is Dimitris Diamantidis and Vasilis Spanoulis</string>
     <string name="correct8">Correct! Its Felipe Reyes!</string>
-    <string name="correct8_1">The correct Answer is Felipe Reyes</string>
+    <string name="correct8_1">Wrong...The correct Answer is Felipe Reyes</string>
     <string name="intro1">Welcome to the Euroleague Quiz \n Please enter your name below</string>
+    <string name="sub8">Submit</string>
+    <string name="cheer">Correct!</string>
+    <string name="result">Check your Score!</string>
+    <string name="start">Start!</string>
+    <string name="name">Player Name</string>
+    <string name="fail">Please answer all the questions</string>
+
 
 
 </resources>
