@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         input1 = findViewById(R.id.input1);
         final String playerName = input1.getText().toString();
-        Intent sendPlayerName = new Intent(this, Main2Activity.class);
+        Intent sendPlayerName = new Intent(this, QuizAct.class);
         sendPlayerName.putExtra("user input1", playerName);
         startActivity(sendPlayerName);
 
